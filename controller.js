@@ -27,7 +27,7 @@ function removeProductSKU(productdata){
     return ;
   }
   if (previousData.quantity > productdata.quantity){
-    previousData.quantity += productdata.quantity;
+    previousData.quantity -= productdata.quantity;
   } else{
     previousData.quantity = 0;
   }
